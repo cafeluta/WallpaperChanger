@@ -1,0 +1,6 @@
+*
+
+# don't ignore these files
+!.gitignore
+!wallpaperDownloader.py
+
