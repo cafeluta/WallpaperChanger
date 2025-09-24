@@ -3,6 +3,9 @@ import random
 import ctypes
 import subprocess
 
+# Run the script so it downloads a new photo
+subprocess.run(["python", "wallpaperDownloader.py"])
+
 # wallpaper folder
 folder = Path("./Wallpapers")
 wallpapers = list(folder.glob("*.png"))
@@ -13,5 +16,3 @@ chosen_wallpaper = random.choice(wallpapers)
 # Set the walppaer in win11
 ctypes.windll.user32.SystemParametersInfoW(20, 0, str(chosen_wallpaper.resolve()), 3)
 
-# Run the script so it downloads a new photo
-subprocess.run(["python", "download_wallpapers.py"])
