@@ -2,9 +2,10 @@ from pathlib import Path
 import random
 import ctypes
 import subprocess
+import wallpaperDownloader
 
 # Run the script so it downloads a new photo
-subprocess.run(["python", "wallpaperDownloader.py"])
+wallpaperDownloader.download_wallpaper()
 
 # wallpaper folder
 folder = Path("./Wallpapers")
